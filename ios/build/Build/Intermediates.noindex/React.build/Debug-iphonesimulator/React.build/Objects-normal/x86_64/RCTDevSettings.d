@@ -1,0 +1,23 @@
+dependencies: \
+  /Users/tiya/MyFirstRN/node_modules/react-native/React/Modules/RCTDevSettings.mm \
+  /Users/tiya/MyFirstRN/node_modules/react-native/React/Modules/RCTDevSettings.h \
+  /Users/tiya/MyFirstRN/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/tiya/MyFirstRN/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/tiya/MyFirstRN/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/tiya/MyFirstRN/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/tiya/MyFirstRN/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/tiya/MyFirstRN/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/tiya/MyFirstRN/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/tiya/MyFirstRN/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
+  /Users/tiya/MyFirstRN/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h \
+  /Users/tiya/MyFirstRN/node_modules/react-native/React/Base/RCTBridge+Private.h \
+  /Users/tiya/MyFirstRN/node_modules/react-native/React/Base/RCTEventDispatcher.h \
+  /Users/tiya/MyFirstRN/node_modules/react-native/React/Modules/RCTJSCSamplingProfiler.h \
+  /Users/tiya/MyFirstRN/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/tiya/MyFirstRN/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/tiya/MyFirstRN/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/tiya/MyFirstRN/node_modules/react-native/React/DevSupport/RCTPackagerClient.h \
+  /Users/tiya/MyFirstRN/node_modules/react-native/React/Profiler/RCTProfile.h \
+  /Users/tiya/MyFirstRN/node_modules/react-native/React/DevSupport/RCTPackagerConnection.h \
+  /Users/tiya/MyFirstRN/node_modules/react-native/React/DevSupport/RCTInspectorDevServerHelper.h \
+  /Users/tiya/MyFirstRN/node_modules/react-native/React/Inspector/RCTInspectorPackagerConnection.h
