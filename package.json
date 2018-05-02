@@ -7,10 +7,12 @@
     "test": "jest"
   },
   "dependencies": {
+    "npm": "^6.0.0",
+    "prop-types": "latest",
     "react": "16.3.1",
     "react-native": "0.55.3",
     "react-navigation": "^1.5.11",
-    "prop-types": "latest"
+    "react-native-banner": "^0.1.0"
   },
   "devDependencies": {
     "babel-jest": "22.4.3",

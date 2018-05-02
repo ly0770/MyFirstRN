@@ -7,7 +7,7 @@ import {
 } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 import DetailsPage from './DetailsPage'
-// import BaseNavigator from '../BaseNavigator';
+import Poster from './Poster'
 
 class HomePage extends Component {
     static navigationOptions = ({ navigation }) => {
@@ -26,6 +26,7 @@ class HomePage extends Component {
     render() {
         return (
             <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+                <Poster/>
                 <Text>This is Home Page!!!</Text>
             </View>
         );
