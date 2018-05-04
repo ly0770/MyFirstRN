@@ -1,82 +1,60 @@
 import React, { Component } from 'react';
-// import PropTypes from 'prop-types';
 import {
-    View,
-    FlatList,
-    Text,
+    ScrollView,
     StyleSheet,
-    Platform
+    View,
+    Dimensions,
+    Text
 } from 'react-native';
-import Banner from 'react-native-banner'
-// let ITEM_HEIGHT = 200;
 
-
-export default class Poster extends Component {
-
-    constructor(props) {
-        super(props);
-
-        this.banners = [
-            {
-                title: 'beauty 1',
-                image: 'http://www.qq745.com/uploads/allimg/141106/1-141106153Q5.png',
-            },
-            {
-                title: 'beauty 2',
-                image: 'http://img1.3lian.com/2015/a1/53/d/200.jpg',
-            },
-            {
-                title: 'The next banner has no title',
-                image: 'http://img1.3lian.com/2015/a1/53/d/198.jpg',
-            },
-            {
-                // title: 'no title',
-                image: 'http://image.tianjimedia.com/uploadImages/2012/235/9J92Z5E5R868.jpg',
-            },
-        ];
-
-        this.iosMarginTop = Platform.OS == 'ios' ? {marginTop: 20} : {};
-
-        this.state = {
-            clickTitle: 'You can try clicking beauty',
-            defaultIndex: 0,
+let SCREEN_WIDTH = Dimensions.get('window').width;
+let SCREEN_HEIGHT = Dimensions.get('window').height;
+let ITEM_HEIGHT = SCREEN_HEIGHT/3;
+class Poster extends Component {
+    renderItem = () => {
+        let colorArr = ['red', 'black', 'tomato', 'gray'];
+        let itemArr = [];
+        for (let i=0; i<colorArr.length; i++) {
+            itemArr.push(
+                <View style={[styles.itemViewStyle, {backgroundColor:colorArr[i]}]}>
+                    <Text style={styles.itemTextStyle}>
+                        {colorArr[i]}
+                    </Text>
+                </View>
+            );
         }
-        this.defaultIndex = 0;
-    }
-
+        return itemArr;
+    };
     render() {
         return (
-            <View style={[styles.container, this.iosMarginTop]}>
-                <Banner
-                    banners={this.banners}
-                    defaultIndex={this.defaultIndex}
-                    onMomentumScrollEnd={this.onMomentumScrollEnd.bind(this)}
-                    intent={this.clickListener.bind(this)}
-                />
-                <Text>{this.state.clickTitle}</Text>
-            </View>
+            <ScrollView style={styles.scrollViewStyle}
+                        horizontal={true}
+                        pagingEnabled={true}
+                        showsHorizontalScrollIndicator={false}
+            >
+                {this.renderItem()}
+            </ScrollView>
         );
-    }
-
-    clickListener(index) {
-        this.setState({
-            clickTitle: this.banners[index].title ? `you click ${this.banners[index].title}` : 'this banner has no title',
-        })
-    }
-
-    onMomentumScrollEnd(event, state) {
-        console.log(`--->onMomentumScrollEnd page index:${state.index}, total:${state.total}`);
-        this.defaultIndex = state.index;
     }
 
 }
 
 const styles = StyleSheet.create({
-    container: {
+    scrollViewStyle: {
+        backgroundColor: 'white'
+    },
+    itemViewStyle:{
         flex: 1,
-        backgroundColor: '#F5FCFF',
+        justifyContent: 'center',
+        alignItems: 'center',
+        width:SCREEN_WIDTH,
+        height:ITEM_HEIGHT,
+    },
+    itemTextStyle:{
+        color: 'white'
     },
 });
+export default Poster;
 // class PageContent extends Component {
 //     _renderItem = (item) => { //class下的方法声明
 //         let txt = '第' + item.index + '个' + ' title=' + item.item.title;

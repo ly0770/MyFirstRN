@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 import {
     View,
     Text,
-    Button
+    Button,
+    StyleSheet
 } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 import DetailsPage from './DetailsPage'
@@ -25,9 +26,9 @@ class HomePage extends Component {
     };
     render() {
         return (
-            <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+            <View style={styles.container}>
                 <Poster/>
-                <Text>This is Home Page!!!</Text>
+                {/*<Text>This is Home Page!!!</Text>*/}
             </View>
         );
     };
@@ -51,5 +52,12 @@ const HomeStack = StackNavigator (
         },
     }
 );
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1
+    },
+
+});
 
 export default HomeStack;
