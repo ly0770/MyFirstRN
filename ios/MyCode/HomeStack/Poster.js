@@ -9,7 +9,7 @@ import {
 
 let SCREEN_WIDTH = Dimensions.get('window').width;
 let SCREEN_HEIGHT = Dimensions.get('window').height;
-let ITEM_HEIGHT = SCREEN_HEIGHT/3;
+let ITEM_HEIGHT = SCREEN_HEIGHT/4;
 class Poster extends Component {
     renderItem = () => {
         let colorArr = ['red', 'black', 'tomato', 'gray'];
@@ -41,7 +41,9 @@ class Poster extends Component {
 
 const styles = StyleSheet.create({
     scrollViewStyle: {
-        backgroundColor: 'white'
+        flex: 1,
+        backgroundColor: 'yellow',
+        maxHeight:ITEM_HEIGHT,
     },
     itemViewStyle:{
         flex: 1,
