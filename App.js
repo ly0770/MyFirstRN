@@ -95,22 +95,22 @@ export default class App extends Component {
                         {/*//}}*/}
                         {/*data={data}>*/}
                     {/*</FlatList>*/}
-//                 </View>
-//
-//             </View>
-//         );
-//     }
-// }
-//
-// const styles = StyleSheet.create({
-//     txt: {
-//         textAlign: 'center',
-//         textAlignVertical: 'center',
-//         color: 'white',
-//         fontSize: 30,
-//     }
-// });
-// export default StackNavigator ({
-//     Home:{ screen: SampleFlatList},
-// });
-//
+// //                 </View>
+// //
+// //             </View>
+// //         );
+// //     }
+// // }
+// //
+// // const styles = StyleSheet.create({
+// //     txt: {
+// //         textAlign: 'center',
+// //         textAlignVertical: 'center',
+// //         color: 'white',
+// //         fontSize: 30,
+// //     }
+// // });
+// // export default StackNavigator ({
+// //     Home:{ screen: SampleFlatList},
+// // });
+// //

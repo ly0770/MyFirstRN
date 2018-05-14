@@ -7,23 +7,55 @@ import {
     StyleSheet,
     SectionList,
     Dimensions,
-    TouchableHighlight
+    TouchableHighlight,
+    FlatList
 } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 import DetailsPage from './DetailsPage'
 import Poster from './Poster'
+import Com from "../../MyTest/MFlatListTest";
 
 let SCREEN_WIDTH = Dimensions.get('window').width;
 let SCREEN_HEIGHT = Dimensions.get('window').height;
 let ITEM_HEIGHT = SCREEN_HEIGHT/3;
+class CategoryCell extends Component {
+    _renderItem = (item) => {
+        let txt = '第' + item.index + '个' + ' title=' + item.item.title;
+        let bgColor = item.index % 2 == 0 ? 'tomato' : 'purple';
+        return <Text style={[{flex:1,height:150,backgroundColor:bgColor},styles.txt]}>{txt}</Text>
+    };
+    _separator = () => {
+        return <View style={{height:2,backgroundColor:'yellow'}}/>;
+    };
+    render() {
+        let data = [];
+        for (let i = 0; i < 10; i++) {
+            data.push({key: i, title: i + ''});
+        }
+        return (
+            <FlatList renderItem={this._renderItem}
+                      ItemSeparatorComponent={this._separator}
+                      horizontal={true}
+                      data={data}
+            />
+        );
+    }
+}
+
 class CategoryList extends Component {
+    // _renderItem = (info) => {
+    //
+    //     let txt = '  ' + info.item.title;
+    //     return <Text
+    //         style={{ height: 150, textAlignVertical: 'center', backgroundColor: "#ffffff", color: '#5C5C5C', fontSize: 15 }}>{txt}</Text>
+    // };
     _renderItem = (info) => {
+
         let txt = '  ' + info.item.title;
-        return <Text
-            style={{ height: 150, textAlignVertical: 'center', backgroundColor: "#ffffff", color: '#5C5C5C', fontSize: 15 }}>{txt}</Text>
+        return <CategoryCell/>
     };
     _seeMorePress = () => {
-        // console.log('see more pressed');
+        // navigation.navigate('Details')
     };
     _sectionComp = (info) => {
 
@@ -109,6 +141,10 @@ const HomeStack = StackNavigator (
 );
 
 const styles = StyleSheet.create({
+    txt: {
+        flex: 1,
+        minWidth:100,
+    },
     container: {
         flex: 1
     },
