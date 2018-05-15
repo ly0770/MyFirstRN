@@ -5,10 +5,11 @@ import {
 } from 'react-navigation';
 import ProfileStack from './ProfileStack/ProfilePage';
 import HomeStack from './HomeStack/HomePage';
-
+import TrendingStack from './TrendingStack/TrendingPage';
 const RootTab = TabNavigator(
     {
         Home:{ screen: HomeStack },
+        Trending:{ screen: TrendingStack},
         Profile:{ screen: ProfileStack },
     },
     {

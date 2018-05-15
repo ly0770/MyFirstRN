@@ -13,7 +13,6 @@ import {
 import { StackNavigator } from 'react-navigation';
 import DetailsPage from './DetailsPage'
 import Poster from './Poster'
-import Com from "../../MyTest/MFlatListTest";
 
 let SCREEN_WIDTH = Dimensions.get('window').width;
 let SCREEN_HEIGHT = Dimensions.get('window').height;
@@ -22,10 +21,14 @@ class CategoryCell extends Component {
     _renderItem = (item) => {
         let txt = '第' + item.index + '个' + ' title=' + item.item.title;
         let bgColor = item.index % 2 == 0 ? 'tomato' : 'purple';
+
         return <Text style={[{flex:1,height:150,backgroundColor:bgColor},styles.txt]}>{txt}</Text>
     };
     _separator = () => {
         return <View style={{height:2,backgroundColor:'yellow'}}/>;
+    };
+    _onPressItem = () => {
+        alert("select")
     };
     render() {
         let data = [];
@@ -43,12 +46,7 @@ class CategoryCell extends Component {
 }
 
 class CategoryList extends Component {
-    // _renderItem = (info) => {
-    //
-    //     let txt = '  ' + info.item.title;
-    //     return <Text
-    //         style={{ height: 150, textAlignVertical: 'center', backgroundColor: "#ffffff", color: '#5C5C5C', fontSize: 15 }}>{txt}</Text>
-    // };
+
     _renderItem = (info) => {
 
         let txt = '  ' + info.item.title;
@@ -68,16 +66,10 @@ class CategoryList extends Component {
                 </TouchableHighlight>
             </View>
         )
-        // return <Text
-        //     style={{ height: 25, textAlign: 'left', textAlignVertical: 'center', backgroundColor: '#9CEBBC', color: 'white', fontSize: 16 }}>{txt}</Text>
     };
 
 
     render() {
-        // let sections = [
-        //     { key: "Recent Videos", data: [{ title: "阿童木" }, { title: "阿玛尼" }, { title: "爱多多" }] },
-        //     { key: "Most Viewed Videos", data: [{ title: "表哥" }, { title: "贝贝" }, { title: "表弟" }, { title: "表姐" }, { title: "表叔" }] },
-        // ];
         let sections = [
             { key: "Recent Videos", data: [{ title: "阿童木" }] },
             { key: "Most Viewed Videos", data: [{ title: "表哥" }] },
