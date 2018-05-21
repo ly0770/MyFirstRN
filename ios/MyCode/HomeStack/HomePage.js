@@ -103,6 +103,24 @@ class HomePage extends Component {
                 ),
         }
     };
+    _loadData = () => {
+         return fetch('https://bibclub.tv/api_public/homePage/')
+            .then((response) => response.json())
+            .then((responseJson) => {
+                if (responseJson.code == 200) {
+                    console.log(responseJson.data);
+                }
+
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+    };
+
+    componentWillMount() {
+        this._loadData();
+    }
+
     render() {
         return (
             <View style={styles.container}>
