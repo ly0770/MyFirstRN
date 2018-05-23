@@ -8,56 +8,27 @@ import {
     SectionList,
     Dimensions,
     TouchableHighlight,
-    FlatList
 } from 'react-native';
 import { StackNavigator } from 'react-navigation';
-import DetailsPage from './DetailsPage'
-import Poster from './Poster'
+import DetailsPage from './DetailsPage';
+import Poster from './Poster';
+import CategoryCell from './CategoryCell';
 
 let SCREEN_WIDTH = Dimensions.get('window').width;
 let SCREEN_HEIGHT = Dimensions.get('window').height;
 let ITEM_HEIGHT = SCREEN_HEIGHT/3;
-class CategoryCell extends Component {
-    _renderItem = (item) => {
-        let txt = '第' + item.index + '个' + ' title=' + item.item.title;
-        let bgColor = item.index % 2 == 0 ? 'tomato' : 'purple';
-
-        return <Text style={[{flex:1,height:150,backgroundColor:bgColor},styles.txt]}>{txt}</Text>
-    };
-    _separator = () => {
-        return <View style={{height:2,backgroundColor:'yellow'}}/>;
-    };
-    _onPressItem = () => {
-        alert("select")
-    };
-    render() {
-        let data = [];
-        for (let i = 0; i < 10; i++) {
-            data.push({key: i, title: i + ''});
-        }
-        return (
-            <FlatList renderItem={this._renderItem}
-                      ItemSeparatorComponent={this._separator}
-                      horizontal={true}
-                      data={data}
-            />
-        );
-    }
-}
 
 class CategoryList extends Component {
 
     _renderItem = (info) => {
-
-        let txt = '  ' + info.item.title;
-        return <CategoryCell/>
+        return <CategoryCell data={info.item.list}/>
     };
     _seeMorePress = () => {
         // navigation.navigate('Details')
+        alert('See More Press!');
     };
     _sectionComp = (info) => {
-
-        let txt = info.section.key;
+        let txt = info ? info.section.name : '';
         return(
             <View style={styles.sectionHeader}>
                 <Text style={styles.sectionHeaderText}>{txt}</Text>
@@ -70,26 +41,34 @@ class CategoryList extends Component {
 
 
     render() {
-        let sections = [
-            { key: "Recent Videos", data: [{ title: "阿童木" }] },
-            { key: "Most Viewed Videos", data: [{ title: "表哥" }] },
-        ];
+        // let sections = [
+        //     { key: "Recent Videos", data: [{ title: "阿童木" }] },
+        //     { key: "Most Viewed Videos", data: [{ title: "表哥" }] },
+        // ];
+        let sections = this.props.data ? this.props.data : [];
+        let posters = this.props.posters? this.props.posters : [];
+        console.log(sections);
         return (
             <View style={{ flex: 1 }}>
                 <SectionList
-                    ListHeaderComponent={<Poster style={styles.poster}/>}
-                    renderSectionHeader={this._sectionComp}
+                    ListHeaderComponent={<Poster style={styles.poster} data={posters}/>}
                     renderItem={this._renderItem}
                     sections={sections}
+                    renderSectionHeader={this._sectionComp}
                     ItemSeparatorComponent={() => <View><Text></Text></View>}
-                    // ListHeaderComponent={() => <View style={{ backgroundColor: '#25B960', alignItems: 'center', height: 30 }}><Text style={{ fontSize: 18, color: '#ffffff' }}>通讯录</Text></View>}
-                    // ListFooterComponent={() => <View style={{ backgroundColor: '#25B960', alignItems: 'center', height: 30 }}><Text style={{ fontSize: 18, color: '#ffffff' }}>通讯录尾部</Text></View>}
                 />
             </View>
         );
     }
 }
 class HomePage extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            dataSource: [],
+            posters: [],
+        };
+    }
     static navigationOptions = ({ navigation }) => {
         return {
             headerTitle: 'Home',
@@ -108,7 +87,19 @@ class HomePage extends Component {
             .then((response) => response.json())
             .then((responseJson) => {
                 if (responseJson.code == 200) {
-                    console.log(responseJson.data);
+                    let sectionList = [];
+                    let posterList = [];
+                    for (let i=0; i<responseJson.data.length; i++) {
+                        let data = responseJson.data[i];
+                        if (data.type === 'recent_videos') {
+                            sectionList.push({name: data.name, data: [{ list: data.videos}]});
+                        } else if (data.type === 'most_viewed') {
+                            sectionList.push({name: data.name, data: [{ list: data.videos}]});
+                        } else if (data.type === 'editors_pick') {
+                            posterList = data.videos;
+                        }
+                    }
+                    this.setState({ dataSource: sectionList, posters: posterList });
                 }
 
             })
@@ -117,14 +108,14 @@ class HomePage extends Component {
             });
     };
 
-    componentWillMount() {
+    componentDidMount() {
         this._loadData();
     }
 
     render() {
         return (
             <View style={styles.container}>
-                <CategoryList style={styles.category}/>
+                <CategoryList style={styles.category} data={this.state.dataSource} posters={this.state.posters}/>
             </View>
         );
     };
@@ -140,7 +131,7 @@ const HomeStack = StackNavigator (
         initialRouteName: 'Home',
         navigationOptions: {
             headerStyle: {
-                backgroundColor: 'tomato'
+                backgroundColor: '#232534'
             },
             headerTintColor: '#fff',
             headerTitleStyle: {
@@ -151,12 +142,9 @@ const HomeStack = StackNavigator (
 );
 
 const styles = StyleSheet.create({
-    txt: {
-        flex: 1,
-        minWidth:100,
-    },
     container: {
-        flex: 1
+        flex: 1,
+        backgroundColor: '#252938',
     },
     category: {
         flex: 1
@@ -169,30 +157,27 @@ const styles = StyleSheet.create({
     sectionHeader: {
         flex: 1,
         flexDirection: 'row',
-        height: 25,
-        // textAlign: 'left',
-        // textAlignVertical: 'center',
-        backgroundColor: '#9CEBBC',
-        // color: 'white',
-        // fontSize: 16
+        height: 35,
+        backgroundColor: '#0f1116',
     },
     sectionHeaderText: {
         flex: 1,
-        // height: 25,
         textAlign: 'left',
         textAlignVertical: 'center',
-        // backgroundColor: 'yellow',
         color: 'white',
-        fontSize: 16
+        fontSize: 15,
+        marginLeft:5,
+        marginTop:8,
+        fontWeight:'bold',
     },
     sectionHeaderButton: {
         flex: 1,
-        fontSize: 12,
+        fontSize: 14,
         color: 'red',
-        // backgroundColor: 'yellow',
-        // height: 20,
-        // textAlign: 'center',
         textAlignVertical: 'center',
+        marginTop: 8,
+        marginRight:5,
+        fontStyle: 'italic',
     }
 
 });

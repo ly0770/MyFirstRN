@@ -14,8 +14,11 @@ const RootTab = TabNavigator(
     },
     {
         tabBarOptions: {
-            activeTintColor: 'tomato',
+            activeTintColor: '#6de1e5',
             inactiveTintColor: 'gray',
+            activeBackgroundColor: '#294254',
+            inactiveBackgroundColor: '#294254',
+            // backgroundColor: '#294254',
         },
         tabBarComponent: TabBarBottom,
         tabBarPosition: 'bottom',
