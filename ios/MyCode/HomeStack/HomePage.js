@@ -171,6 +171,7 @@ const styles = StyleSheet.create({
         fontWeight:'bold',
     },
     sectionHeaderButton: {
+        // display:'flex',
         flex: 1,
         fontSize: 14,
         color: 'red',

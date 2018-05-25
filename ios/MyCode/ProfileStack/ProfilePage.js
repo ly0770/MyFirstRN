@@ -57,10 +57,6 @@ class ProfilePage extends Component {
         return <View style={styles.separatorLine}/>;
     };
     render() {
-        // let data = [];
-        // for (let i = 0; i < 5; i++) {
-        //     data.push({key: i, title: i + ''});
-        // }
         let data = [{ id:0, title:'Profile' }, { id:1, title:'Account' }, { id:2, title:'Settings' }, { id:3, title:'Version' }];
         return (
             <FlatList style={styles.list}
@@ -136,6 +132,18 @@ const styles = StyleSheet.create({
 const ProfileStack = StackNavigator(
     {
         Profile: { screen: ProfilePage },
+    },
+    {
+        initialRouteName: 'Profile',
+        navigationOptions: {
+            headerStyle: {
+                backgroundColor: '#232534'
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+                fontWeight: 'bold',
+            },
+        },
     }
 );
 
