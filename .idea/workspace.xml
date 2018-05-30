@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d7ec2db-0c90-46c2-a2e0-f344d2bc680e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ios/Nav+Tab/RootNav.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/MyFirstRN.xcodeproj/project.xcworkspace/xcuserdata/tiya.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/ios/MyFirstRN.xcodeproj/project.xcworkspace/xcuserdata/tiya.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/MyCode/TrendingStack/TrendingPage.js" afterPath="$PROJECT_DIR$/ios/MyCode/TrendingStack/TrendingPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App.js" afterPath="$PROJECT_DIR$/App.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/MyCode/HomeStack/DetailsPage.js" afterPath="$PROJECT_DIR$/ios/MyCode/HomeStack/DetailsPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/MyCode/HomeStack/HomePage.js" afterPath="$PROJECT_DIR$/ios/MyCode/HomeStack/HomePage.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native/Libraries/ActionSheetIOS/RCTActionSheet.xcodeproj/xcuserdata/tiya.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="$PROJECT_DIR$/node_modules/react-native/Libraries/ActionSheetIOS/RCTActionSheet.xcodeproj/xcuserdata/tiya.xcuserdatad/xcschemes/xcschememanagement.plist" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj/xcuserdata/tiya.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="$PROJECT_DIR$/node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj/xcuserdata/tiya.xcuserdatad/xcschemes/xcschememanagement.plist" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-native/Libraries/Geolocation/RCTGeolocation.xcodeproj/xcuserdata/tiya.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="$PROJECT_DIR$/node_modules/react-native/Libraries/Geolocation/RCTGeolocation.xcodeproj/xcuserdata/tiya.xcuserdatad/xcschemes/xcschememanagement.plist" />
@@ -33,8 +36,8 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+            <state relative-caret-position="75">
+              <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -42,13 +45,95 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomePage.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RootNav.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ios/Nav+Tab/RootNav.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="434">
+              <caret line="72" column="42" lean-forward="true" selection-start-line="72" selection-start-column="42" selection-end-line="72" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MStackTabNav.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ios/MyTest/MStackTabNav.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="576">
+              <caret line="86" column="8" lean-forward="false" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StackNavigator.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/react-navigation/src/navigators/StackNavigator.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MStackNavTest.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ios/MyTest/MStackNavTest.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="165" column="28" lean-forward="true" selection-start-line="165" selection-start-column="28" selection-end-line="165" selection-end-column="28" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomePage.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ios/MyCode/HomeStack/HomePage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="89" column="29" lean-forward="false" selection-start-line="89" selection-start-column="29" selection-end-line="89" selection-end-column="29" />
+            <state relative-caret-position="337">
+              <caret line="83" column="23" lean-forward="false" selection-start-line="83" selection-start-column="23" selection-end-line="87" selection-end-column="25" />
               <folding>
                 <element signature="e#1#42#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CategoryCell.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ios/MyCode/HomeStack/CategoryCell.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DetailsPage.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ios/MyCode/HomeStack/DetailsPage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="452">
+              <caret line="61" column="25" lean-forward="false" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TabNavigator.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ios/MyCode/TabNavigator.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="27" selection-end-column="2" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -57,43 +142,11 @@
       <file leaf-file-name="TrendingPage.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ios/MyCode/TrendingStack/TrendingPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
+            <state relative-caret-position="315">
               <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Poster.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ios/MyCode/HomeStack/Poster.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="24" column="14" lean-forward="false" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DurationLabel.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ios/MyCode/Tools/DurationLabel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="29" column="10" lean-forward="false" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProfilePage.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ios/MyCode/ProfileStack/ProfilePage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="45" column="16" lean-forward="false" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -137,8 +190,8 @@
       <find>category</find>
       <find>tabBarOptions</find>
       <find>backgroundco</find>
-      <find>see</find>
       <find>method</find>
+      <find>see</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -153,15 +206,17 @@
         <option value="$PROJECT_DIR$/ios/MyTest/MFlatListTest.js" />
         <option value="$PROJECT_DIR$/node_modules/react-native-banner/Banner.js" />
         <option value="$PROJECT_DIR$/node_modules/react-native-banner/Swiper.js" />
-        <option value="$PROJECT_DIR$/App.js" />
         <option value="$PROJECT_DIR$/ios/MyCode/Tools/DurationLabel.js" />
         <option value="$PROJECT_DIR$/ios/MyCode/HomeStack/Poster.js" />
         <option value="$PROJECT_DIR$/ios/MyCode/HomeStack/CategoryList.js" />
         <option value="$PROJECT_DIR$/ios/MyCode/TabNavigator.js" />
         <option value="$PROJECT_DIR$/ios/MyCode/HomeStack/CategoryCell.js" />
-        <option value="$PROJECT_DIR$/ios/MyCode/HomeStack/HomePage.js" />
         <option value="$PROJECT_DIR$/ios/MyCode/ProfileStack/ProfilePage.js" />
         <option value="$PROJECT_DIR$/ios/MyCode/TrendingStack/TrendingPage.js" />
+        <option value="$PROJECT_DIR$/ios/MyCode/HomeStack/HomePage.js" />
+        <option value="$PROJECT_DIR$/ios/MyCode/HomeStack/DetailsPage.js" />
+        <option value="$PROJECT_DIR$/App.js" />
+        <option value="$PROJECT_DIR$/ios/Nav+Tab/RootNav.js" />
       </list>
     </option>
   </component>
@@ -177,8 +232,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="299" />
-    <option name="y" value="56" />
+    <option name="x" value="441" />
+    <option name="y" value="149" />
     <option name="width" value="1476" />
     <option name="height" value="921" />
   </component>
@@ -236,6 +291,31 @@
               <item name="MyFirstRN" type="462c0819:PsiDirectoryNode" />
               <item name="ios" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="MyFirstRN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyFirstRN" type="462c0819:PsiDirectoryNode" />
+              <item name="ios" type="462c0819:PsiDirectoryNode" />
+              <item name="MyCode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyFirstRN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyFirstRN" type="462c0819:PsiDirectoryNode" />
+              <item name="ios" type="462c0819:PsiDirectoryNode" />
+              <item name="MyCode" type="462c0819:PsiDirectoryNode" />
+              <item name="TrendingStack" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyFirstRN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyFirstRN" type="462c0819:PsiDirectoryNode" />
+              <item name="ios" type="462c0819:PsiDirectoryNode" />
+              <item name="MyTest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyFirstRN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyFirstRN" type="462c0819:PsiDirectoryNode" />
+              <item name="ios" type="462c0819:PsiDirectoryNode" />
+              <item name="Nav+Tab" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -248,7 +328,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="SearchEverywhereHistoryKey" value="Text&#9;FILE&#9;file:///Users/tiya/Documents/GitHub/MyFirstRN/node_modules/react-native/Libraries/Text/Text.js&#10;tabnavi&#9;null&#9;null&#10;tab&#9;null&#9;null&#10;tabna&#9;FILE&#9;file:///Users/tiya/Documents/GitHub/MyFirstRN/ios/MyCode/TabNavigator.js&#10;sect&#9;FILE&#9;file:///Users/tiya/Documents/GitHub/MyFirstRN/node_modules/react-native/Libraries/Lists/SectionList.js&#10;View&#9;FILE&#9;file:///Users/tiya/Documents/GitHub/MyFirstRN/node_modules/react-native/Libraries/Components/View/View.js&#10;flatl&#9;FILE&#9;file:///Users/tiya/Documents/GitHub/MyFirstRN/node_modules/react-native/Libraries/Lists/FlatList.js&#10;view&#9;FILE&#9;file:///Users/tiya/Documents/GitHub/MyFirstRN/node_modules/react-native/Libraries/Components/View/View.js&#10;touch&#9;null&#9;null&#10;Tex&#9;null&#9;null&#10;BUtt&#9;null&#9;null&#10;sec&#9;FILE&#9;file:///Users/tiya/Documents/GitHub/MyFirstRN/node_modules/react-native/Libraries/Lists/SectionList.js&#10;section&#9;null&#9;null&#10;Dimensions&#9;null&#9;null&#10;AppS&#9;null&#9;null&#10;Scro&#9;FILE&#9;file:///Users/tiya/Documents/GitHub/MyFirstRN/node_modules/react-native/Libraries/Components/ScrollView/ScrollView.js&#10;swiper&#9;null&#9;null&#10;Banner&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="stacknavi&#9;FILE&#9;file:///Users/tiya/Documents/GitHub/MyFirstRN/node_modules/react-navigation/src/navigators/StackNavigator.js&#10;tabna&#9;FILE&#9;file:///Users/tiya/Documents/GitHub/MyFirstRN/node_modules/react-navigation/src/navigators/TabNavigator.js&#10;flatli&#9;FILE&#9;file:///Users/tiya/Documents/GitHub/MyFirstRN/node_modules/react-native/Libraries/Lists/FlatList.js&#10;Text&#9;FILE&#9;file:///Users/tiya/Documents/GitHub/MyFirstRN/node_modules/react-native/Libraries/Text/Text.js&#10;tabnavi&#9;null&#9;null&#10;tab&#9;null&#9;null&#10;sect&#9;FILE&#9;file:///Users/tiya/Documents/GitHub/MyFirstRN/node_modules/react-native/Libraries/Lists/SectionList.js&#10;View&#9;FILE&#9;file:///Users/tiya/Documents/GitHub/MyFirstRN/node_modules/react-native/Libraries/Components/View/View.js&#10;flatl&#9;FILE&#9;file:///Users/tiya/Documents/GitHub/MyFirstRN/node_modules/react-native/Libraries/Lists/FlatList.js&#10;view&#9;FILE&#9;file:///Users/tiya/Documents/GitHub/MyFirstRN/node_modules/react-native/Libraries/Components/View/View.js&#10;touch&#9;null&#9;null&#10;Tex&#9;null&#9;null&#10;BUtt&#9;null&#9;null&#10;sec&#9;FILE&#9;file:///Users/tiya/Documents/GitHub/MyFirstRN/node_modules/react-native/Libraries/Lists/SectionList.js&#10;section&#9;null&#9;null&#10;Dimensions&#9;null&#9;null&#10;AppS&#9;null&#9;null&#10;Scro&#9;FILE&#9;file:///Users/tiya/Documents/GitHub/MyFirstRN/node_modules/react-native/Libraries/Components/ScrollView/ScrollView.js&#10;swiper&#9;null&#9;null&#10;Banner&#9;null&#9;null" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -287,12 +367,12 @@
       <workItem from="1526611462343" duration="4381000" />
       <workItem from="1526869286253" duration="52879000" />
       <workItem from="1527227404829" duration="3832000" />
-      <workItem from="1527472215356" duration="2749000" />
+      <workItem from="1527472215356" duration="17360000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153052000" />
+    <option name="totallyTimeSpent" value="167663000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -304,7 +384,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="299" y="56" width="1476" height="921" extended-state="0" />
+    <frame x="441" y="149" width="1476" height="921" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21512027" sideWeight="0.8861985" order="3" side_tool="false" content_ui="combo" />
@@ -334,72 +414,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="16" />
+      <option name="time" value="17" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ios/MyCode/HomeStack/Poster.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="34" lean-forward="false" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-native/Libraries/Lists/FlatList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1590">
-          <caret line="106" column="19" lean-forward="false" selection-start-line="106" selection-start-column="6" selection-end-line="106" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ios/MyCode/HomeStack/HomePage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="52" lean-forward="true" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
-          <folding>
-            <element signature="e#1#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-native/Libraries/Lists/FlatList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7155">
-          <caret line="483" column="11" lean-forward="true" selection-start-line="483" selection-start-column="11" selection-end-line="483" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-native/Libraries/Lists/FlatList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" column="42" lean-forward="true" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -540,28 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ios/MyTest/MFlatListTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1316">
-          <caret line="133" column="2" lean-forward="false" selection-start-line="133" selection-start-column="2" selection-end-line="133" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-native/Libraries/react-native/react-native-implementation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="23" column="6" lean-forward="false" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-native/Libraries/Lists/FlatList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1095">
-          <caret line="79" column="24" lean-forward="false" selection-start-line="79" selection-start-column="2" selection-end-line="79" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/react-native/Libraries/StyleSheet/StyleSheetValidation.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="539">
@@ -603,7 +600,7 @@
         <state relative-caret-position="240">
           <caret line="24" column="14" lean-forward="false" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -631,13 +628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ios/MyTest/MStackTabNav.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="86" column="8" lean-forward="false" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/react-navigation/src/react-navigation.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="267">
@@ -645,27 +635,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-navigation/src/navigators/TabNavigator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1094">
-          <caret line="81" column="6" lean-forward="true" selection-start-line="81" selection-start-column="6" selection-end-line="81" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/react-native/Libraries/Network/XMLHttpRequest.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="366">
           <caret line="566" column="0" lean-forward="false" selection-start-line="566" selection-start-column="0" selection-end-line="566" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ios/MyCode/HomeStack/CategoryCell.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="6" lean-forward="true" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -683,26 +656,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ios/MyCode/TabNavigator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="23" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ios/MyCode/ProfileStack/ProfilePage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -711,10 +664,116 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-navigation/src/NavigationActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="126" column="2" lean-forward="false" selection-start-line="126" selection-start-column="2" selection-end-line="126" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ios/MyTest/MFlatListTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1845">
+          <caret line="133" column="2" lean-forward="false" selection-start-line="133" selection-start-column="2" selection-end-line="133" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-native/Libraries/Components/Touchable/Touchable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="743" column="0" lean-forward="false" selection-start-line="743" selection-start-column="0" selection-end-line="743" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-native/Libraries/react-native/react-native-implementation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="39" column="6" lean-forward="false" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-native/Libraries/Lists/FlatList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1913">
+          <caret line="153" column="12" lean-forward="false" selection-start-line="153" selection-start-column="2" selection-end-line="153" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ios/MyCode/HomeStack/CategoryCell.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-native/Libraries/Components/StatusBar/StatusBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="98" column="4" lean-forward="false" selection-start-line="98" selection-start-column="4" selection-end-line="98" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ios/MyCode/HomeStack/DetailsPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="61" column="25" lean-forward="false" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-navigation/src/navigators/TabNavigator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="61" column="16" lean-forward="false" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ios/MyCode/TrendingStack/TrendingPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
+        <state relative-caret-position="315">
           <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-navigation/src/navigators/StackNavigator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ios/MyTest/MStackNavTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="165" column="28" lean-forward="true" selection-start-line="165" selection-start-column="28" selection-end-line="165" selection-end-column="28" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -723,10 +782,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ios/MyCode/HomeStack/HomePage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="89" column="29" lean-forward="false" selection-start-line="89" selection-start-column="29" selection-end-line="89" selection-end-column="29" />
+        <state relative-caret-position="337">
+          <caret line="83" column="23" lean-forward="false" selection-start-line="83" selection-start-column="23" selection-end-line="87" selection-end-column="25" />
           <folding>
             <element signature="e#1#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ios/MyTest/MStackTabNav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="86" column="8" lean-forward="false" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ios/MyCode/TabNavigator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="27" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ios/Nav+Tab/RootNav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="72" column="42" lean-forward="true" selection-start-line="72" selection-start-column="42" selection-end-line="72" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>

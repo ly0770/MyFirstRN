@@ -19,14 +19,17 @@ let SCREEN_HEIGHT = Dimensions.get('window').height;
 let ITEM_HEIGHT = SCREEN_HEIGHT/3;
 
 class CategoryList extends Component {
-
+           // alert('See More Press!');
     _renderItem = (info) => {
         return <CategoryCell data={info.item.list}/>
     };
     _seeMorePress = () => {
         // navigation.navigate('Details')
-        alert('See More Press!');
-    };
+        const { navigate } = this.props.navigation;
+        navigate('Details',{ title: 'Recent Videos' });
+    }
+
+
     _sectionComp = (info) => {
         let txt = info ? info.section.name : '';
         return(
@@ -70,16 +73,20 @@ class HomePage extends Component {
         };
     }
     static navigationOptions = ({ navigation }) => {
+        let _nextPage = () => {
+            navigation.navigate('Details')
+        };
+
         return {
             headerTitle: 'Home',
-            headerRight:
-                (
-                    <Button
-                        title='Details'
-                        color='#fff'
-                        onPress={() => navigation.navigate('Details')}
-                    />
-                ),
+            // headerRight:
+            //     (
+            //         <Button
+            //             title='Details'
+            //             color='#fff'
+            //             onPress={_nextPage}
+            //         />
+            //     ),
         }
     };
     _loadData = () => {
@@ -115,7 +122,11 @@ class HomePage extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <CategoryList style={styles.category} data={this.state.dataSource} posters={this.state.posters}/>
+                <CategoryList style={styles.category}
+                              data={this.state.dataSource}
+                              posters={this.state.posters}
+                              navigation={this.props.navigation}
+                              />
             </View>
         );
     };
