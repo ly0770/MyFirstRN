@@ -50,6 +50,16 @@ class DetailPage extends Component {
 }
 
 class ProfilePage extends Component {
+    static navigationOptions = ({ navigation }) => {
+        return {
+            headerTitle: 'Home',
+            headerRight:(
+                <Button title='Details'
+                        color='#000'
+                        onPress={() => {navigation.navigate('Details')}}/>
+            ),
+        };
+    };
     render() {
         return (
             <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: 'green'}}>

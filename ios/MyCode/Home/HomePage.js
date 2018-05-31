@@ -3,17 +3,15 @@ import React, { Component } from 'react';
 import {
     View,
     Text,
-    Button,
     StyleSheet,
     SectionList,
     Dimensions,
     TouchableHighlight,
+    Image,
+    Button,
 } from 'react-native';
-import { StackNavigator } from 'react-navigation';
-import DetailsPage from './DetailsPage';
 import Poster from './Poster';
 import CategoryCell from './CategoryCell';
-
 let SCREEN_WIDTH = Dimensions.get('window').width;
 let SCREEN_HEIGHT = Dimensions.get('window').height;
 let ITEM_HEIGHT = SCREEN_HEIGHT/3;
@@ -73,27 +71,27 @@ class HomePage extends Component {
         };
     }
     static navigationOptions = ({ navigation }) => {
-        let _nextPage = () => {
-            navigation.navigate('Details')
-        };
-
         return {
             headerTitle: 'Home',
-            // headerRight:
-            //     (
-            //         <Button
-            //             title='Details'
-            //             color='#fff'
-            //             onPress={_nextPage}
-            //         />
-            //     ),
+            headerLeft:(
+                <Button title='Test'
+                        color='#fff'
+                        onPress={() => { navigation.navigate('Profile',{ title: 'Profile' });}}/>
+
+            ),
+            tabBarIcon:({ focused, tintColor }) => (
+                <Image
+                    // source={focused ? require('../../../images/trending.png') : require('../../../images/home.png')}
+                    source={require('../../../images/home.png')}
+                    style={{ width: 24, height: 24, tintColor: tintColor }}
+                />),
         }
     };
     _loadData = () => {
          return fetch('https://bibclub.tv/api_public/homePage/')
             .then((response) => response.json())
             .then((responseJson) => {
-                if (responseJson.code == 200) {
+                if (responseJson.code === '200') {
                     let sectionList = [];
                     let posterList = [];
                     for (let i=0; i<responseJson.data.length; i++) {
@@ -133,24 +131,6 @@ class HomePage extends Component {
 }
 
 
-const HomeStack = StackNavigator (
-    {
-        Home:{ screen: HomePage },
-        Details:{ screen: DetailsPage},
-    },
-    {
-        initialRouteName: 'Home',
-        navigationOptions: {
-            headerStyle: {
-                backgroundColor: '#232534'
-            },
-            headerTintColor: '#fff',
-            headerTitleStyle: {
-                fontWeight: 'bold',
-            },
-        },
-    }
-);
 
 const styles = StyleSheet.create({
     container: {
@@ -194,4 +174,4 @@ const styles = StyleSheet.create({
 
 });
 
-export default HomeStack;
+export default HomePage;

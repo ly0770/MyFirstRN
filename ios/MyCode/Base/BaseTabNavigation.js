@@ -1,16 +1,19 @@
 import React from 'react';
 import {
     TabNavigator,
-    TabBarBottom
+    TabBarBottom,
 } from 'react-navigation';
-import ProfileStack from './ProfileStack/ProfilePage';
-import HomeStack from './HomeStack/HomePage';
-import TrendingStack from './TrendingStack/TrendingPage';
+import HomePage from '../Home/HomePage';
+import TrendingPage from '../Trending/TrendingPage';
+import SearchPage from '../Search/SearchPage';
+import CategoryPage from '../Category/CategoryPage';
+
 const RootTab = TabNavigator(
     {
-        Home:{ screen: HomeStack },
-        Trending:{ screen: TrendingStack},
-        Profile:{ screen: ProfileStack },
+        Home:{ screen: HomePage },
+        Trending:{ screen: TrendingPage},
+        Search:{ screen: SearchPage },
+        Category:{ screen: CategoryPage },
     },
     {
         tabBarOptions: {

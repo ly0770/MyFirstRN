@@ -10,7 +10,6 @@ import {
     ImageBackground,
     Button,
 } from 'react-native';
-import { StackNavigator } from 'react-navigation';
 import DurationLabel from '../Tools/DurationLabel'
 let SCREEN_WIDTH = Dimensions.get('window').width;
 let SCREEN_HEIGHT = Dimensions.get('window').height;
@@ -64,6 +63,18 @@ class TrendingPage extends Component {
     static navigationOptions = ({ navigation }) => {
         return {
             headerTitle: 'Trending',
+            headerRight:(
+                <Button title='Test'
+                        color='#fff'
+                        onPress={() => { navigation.navigate('Details',{ title: 'Recent Videos' });}}/>
+
+            ),
+            tabBarIcon:({ focused, tintColor }) => (
+                <Image
+                    // source={focused ? require('../../../images/trending.png') : require('../../../images/home.png')}
+                    source={require('../../../images/trending.png')}
+                    style={{ width: 30, height: 30, tintColor: tintColor }}
+                />),
 
         }
     };
@@ -81,7 +92,7 @@ class TrendingPage extends Component {
         return fetch('https://bibclub.tv/api_public/getVideos/?sort=trending&page=1')
             .then((response) => response.json())
             .then((responseJson) => {
-                if (responseJson.code == 200) {
+                if (responseJson.code === '200') {
                     let dataSource = responseJson.data;
                     this.setState({ dataSource: dataSource});
                 }
@@ -133,9 +144,6 @@ const styles = StyleSheet.create({
     },
     avatar:{
         flex: 1,
-        // maxHeight:Avatar_Height,
-        // maxWidth:Avatar_Height,
-        // minWidth:Avatar_Height,
         maxHeight:Avatar_Height,
         maxWidth: Avatar_Height,
         minHeight:Avatar_Height,
@@ -180,23 +188,6 @@ const styles = StyleSheet.create({
     },
 });
 
-const TrendingStack = StackNavigator(
-    {
-        Trending:{ screen: TrendingPage },
-    },
-    {
-        initialRouteName: 'Trending',
-        navigationOptions: {
-            headerStyle: {
-                backgroundColor: '#232534'
-            },
-            headerTintColor: '#fff',
-            headerTitleStyle: {
-                fontWeight: 'bold',
-            },
-        },
-    }
-);
 
-export default TrendingStack;
+export default TrendingPage;
 

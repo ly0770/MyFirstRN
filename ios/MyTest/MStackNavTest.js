@@ -71,26 +71,6 @@ class HomeScreen extends Component {
     _increaseCount = () => {
         this.setState({ count: this.state.count + 1 });
     };
-    //homescreen的navigationOptions优先级高于StackNavigator的navigationOptions
-    // static navigationOptions = {
-    //     headerTitle: <LogoTitle />, //headerTitle优先级高于title
-    //     // title: 'Home',
-    //     headerRight: (
-    //         <Button
-    //             onPress={() => alert('This is right button!')}
-    //             title="Info"
-    //             color="#fff"
-    //         />
-    //     ),
-    //     headerStyle: {
-    //         backgroundColor: '#f4511e'
-    //     },
-    //     headerTintColor: '#fff',
-    //     headerTitleStyle: {
-    //         fontWeight: 'bold',
-    //     },
-    //
-    // };
 
     render() {
         return (

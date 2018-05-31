@@ -129,22 +129,6 @@ const styles = StyleSheet.create({
         minHeight: 0.5,
     },
 });
-const ProfileStack = StackNavigator(
-    {
-        Profile: { screen: ProfilePage },
-    },
-    {
-        initialRouteName: 'Profile',
-        navigationOptions: {
-            headerStyle: {
-                backgroundColor: '#232534'
-            },
-            headerTintColor: '#fff',
-            headerTitleStyle: {
-                fontWeight: 'bold',
-            },
-        },
-    }
-);
 
-export default ProfileStack;
+
+export default ProfilePage;
