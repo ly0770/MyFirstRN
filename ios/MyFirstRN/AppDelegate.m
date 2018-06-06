@@ -15,8 +15,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   NSURL *jsCodeLocation;
-//  jsCodeLocation = [NSURL URLWithString:@"http://192.168.6.22:8081/index.bundle?platform=ios&dev=true&minify=false"];
-
+  //release
+//  jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForFallbackResource:@"index.ios" fallbackExtension:@"jsbundle"];
+  //dev
   jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
   NSLog(@"--------------%@",jsCodeLocation);
   RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation

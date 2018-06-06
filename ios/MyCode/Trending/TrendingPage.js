@@ -88,8 +88,11 @@ class TrendingPage extends Component {
     componentDidMount() {
         this._loadData();
     }
+
     _loadData = () => {
-        return fetch('https://bibclub.tv/api_public/getVideos/?sort=trending&page=1')
+        // http://www.pccwg-demo.com
+        //https://bibclub.tv/api_public/getVideos/?sort=trending&page=1
+        return fetch('http://www.pccwg-demo.com/api_public/getVideos/?sort=trending&page=1')
             .then((response) => response.json())
             .then((responseJson) => {
                 if (responseJson.code === '200') {

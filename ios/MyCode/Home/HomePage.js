@@ -90,6 +90,7 @@ class HomePage extends Component {
     _loadData = () => {
         // http://www.pccwg-demo.com
             // https://bibclub.tv/api_public/homePage/
+        // http://www.pccwg-demo.com/api_public/homePage/
          return fetch('http://www.pccwg-demo.com/api_public/homePage/')
             .then((response) => response.json())
             .then((responseJson) => {
